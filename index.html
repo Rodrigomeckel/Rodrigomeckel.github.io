@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rodrigo Meckelburg</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiências</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+
+      <button id="dark-mode-toggle" class="btn btn-color-3">
+        <span id="dark-mode-icon" class="icon-2">🌞</span>
+      </button>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rodrigo Meckelburg</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiências</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id="profile-pic" src="./assets/profile-pic.png" alt="Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, Eu sou</p>
+        <h1 class="title">Rodrigo Meckelburg</h1>
+        <p class="section__text__p2">Back-end Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Rodrigo Meckelburg.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            informações de contato
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon github-icon"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conheça mais</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>3+ Anos <br />Back-end Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formação</h3>
+              <p>Engenharia de Software - Cursando 2/8<br />Ensino médio Técnico em Informática - Completo</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="descricao2">
+              Meu nome é Rodrigo, tenho 19 anos e recentemente concluí
+              meu ensino médio técnico em informática, e atualmente estou
+              no 2º semestre da faculdade de Engenharia de Software.
+              Durante minha jornada acadêmica, desenvolvi uma paixão
+              profunda pela tecnologia e programação. Sempre busquei
+              oportunidades para aprimorar minhas habilidades,
+              participando de projetos acadêmicos desafiadores e cursos
+              adicionais.
+              <br>
+              Além dos estudos, busco constantemente maneiras de aplicar
+              meus conhecimentos em projetos práticos. A programação não
+              é apenas minha área de estudo, mas também um dos meus
+              principais hobbies. Ao explorar diversas linguagens de
+              programação, busco expandir meu conjunto de habilidades e
+              enfrentar novos desafios.
+              <br>
+              Estou entusiasmado para ingressar na área de
+              desenvolvimento, contribuir para projetos inovadores e
+              continuar aprendendo no dinâmico mundo da tecnologia.
+
+          </div>
+          <br>
+          <h1 class="title">Experiênica Profissional</h1>
+          <br>
+          <p class="descricao2">
+            FIz um estágio em 2022 para uma empresa de
+            tecnologia em Santa Catariana, basicamente minha
+            função abordava SQL server, C#, .NET, minha função
+            dentro da empresa era ajudar na correção de
+            problemas de códigos
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Meus conhecimentos em</p>
+      <h1 class="title">Programação</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.NET</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Mais recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Primerio Projeto - Clinica Hospitar</h2>
+            <br><br><br>
+            <p class="descricao">No meu terceiro ano do ensino médio
+              técnico em informática, participei do
+              desenvolvimento de um projeto web com
+              meu grupo. Criamos um site destinado a
+              consultórios médicos, que incluía recursos
+              como login, cadastro, agendamento de
+              consultas, visualização de ficha médica e
+              informações do usuário. Minha
+              responsabilidade nesse projeto foi a
+              implementação do back-end, onde
+              desenvolvi toda a estrutura em PHP e suas
+              funcionalidades.</p>
+            
+            <br><br><br><br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Segundo Projeto - Automação de Certificado</h2>
+            <br><br><br>
+            <p class="descricao">Esse projeto foi vendido para um cliente usando a linguagem Python, basicamente a função do programa
+               era automatizar o envio de dados de uma planilha Excel para preencher os campos de um certificado de 
+               conclusão de curso, EX: Nome do curso, nome do participante, data de início, data de termino, carga 
+               horaria, data de emissão do certificado e a assinatura do gestor geral</p>
+
+            <br><br><br><br><br><br>
+            <div class="btn-container">
+              
+              <button class="btn btn-color-2 project-btn">
+                Github
+              </button>
+             
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entrar em contato</p>
+      <h1 class="title">Contate-me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <a href="mailto:rodrigomeckel@gmail.com" target="_blank">rodrigomeckel@gmail.com </a>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <a href="//www.linkedin.com/in/rodrigo-meckelburg-174502229/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiênica</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Rodrigo Meckelburg. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
